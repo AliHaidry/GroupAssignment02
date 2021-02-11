@@ -1,6 +1,7 @@
 #include <iostream>
 #include <time.h>
 #include <cstdlib>
+#include <iomanip>
 
 
 using namespace std;
@@ -39,8 +40,10 @@ int main()
    shuffle(container, MAX_SIZE);
 
    // Printing all shuffled elements of cards 
+   cout<<" Shuffling the items in the container: " << endl;
    for (int counter = 0; counter < MAX_SIZE; counter++)
-      cout << container[counter] << " " << "\n";
+      cout<< setw(6) << container[counter]<< " " << "\n";
+   cout << " Shuffling done!" << endl;
    cout << endl;
 
 
